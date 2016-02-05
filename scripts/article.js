@@ -86,7 +86,7 @@
         Article.loadAll(rows);
         next();
       } else {
-        $.getJSON('data/hackerIpsum.json', function(rawData) {
+        $.getJSON('http://localhost:3000/articles', function(rawData) {
           rawData.forEach(function(item) {
 
             var article = new Article(item); // Instantiate an article based on item from JSON
