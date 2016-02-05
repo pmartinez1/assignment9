@@ -44,7 +44,6 @@ models.sequelize.sync({force:true}).then(function(x) {
   console.log('DB URI STRING: ' + DB)
   })
 })
-
 //in Node functions and files have scope
 //in JS only functions have scope
 //modules.exports is what allows you to grab stuff out of the IIFE
